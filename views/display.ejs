@@ -1,0 +1,32 @@
+<% layout("/layouts/boilerplate") -%>
+
+<div class="container">
+    <div class="row my-5">
+        <div align="center" class="mb-5">
+            <h1>All Twitter's Profile Information</h1>
+        </div>
+        <% allUsers.forEach(User => { %>
+            <div class="col-md-4 d-flex justify-content-center mb-4">
+                <div class="card shadow-lg rounded p-4 " style="width: 24rem;">
+                    <!-- Optional image -->
+                    <!-- <img src="..." class="card-img-top" alt="..."> -->
+                    <div class="card-body">
+                        <h5 class="card-title"><b>Username: </b>@<%= User.username %></h5>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item"><b>Id: </b><%= User.id %></li>
+                        <li class="list-group-item"><b>Name: </b><%= User.name %></li>
+                        <li class="list-group-item"><b>Followers: </b><%= User.followers %></li>
+                        <li class="list-group-item"><b>Followers: </b><%= User.following %></li>
+                        <li class="list-group-item"><b>Tweets: </b><%= User.tweets %></li>
+                        <li class="list-group-item"><b>Likes: </b><%= User.likes %></li>
+                    </ul>
+                    
+                </div>
+            </div>
+        <% }) %>
+    </div>
+</div>
+
+
+ 
