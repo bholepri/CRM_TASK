@@ -11,12 +11,13 @@
             <h1>Get Information Using Twitter Username</h1>
         </div>
         <div class="col-md-4 col-10 m-auto my-5 form-div shadow-lg rounded">
-            <form method="post" action="/username" >
+            <form method="post" action="/username"  >
                 
                     <div class="my-3 p-4 ">
                         <label for="exampleInputEmail1" class="form-label "><b>Username:</b></label>
-                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="username">
-                        <div id="emailHelp" class="form-text"></div>
+                        <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" name="username" placeholder="Add Twitter username" required>
+                        <div class="invalid-feedback">Please Enter Valid Twitter Username!</div>
+                        <!-- <div id="emailHelp" class="form-text"></div> -->
                       </div>
                 
                 <div align="center">
