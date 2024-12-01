@@ -7,7 +7,7 @@ const bodyParser = require('body-parser');
 const ejsMate=require("ejs-mate");
 
 const app = express();
-const port = process.env.port || 8000
+const port = process.env.port || 3000
 
 app.set('views', path.join(__dirname, 'views'));         //ejs
 app.set("view engine","ejs"); 
